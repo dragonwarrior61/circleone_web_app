@@ -1,0 +1,16 @@
+.avatar_status {
+  display: flex;
+  align-items: center;
+
+  .status_icon {
+    cursor: pointer;
+
+    .icon_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px !important;
+      height: 14px !important;
+    }
+  }
+}

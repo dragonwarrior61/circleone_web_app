@@ -1,0 +1,13 @@
+.avatar-Objects {
+  position: absolute;
+
+  .object {
+    width: 50px;
+  }
+
+  .selectedAvatar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

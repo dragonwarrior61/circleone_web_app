@@ -1,0 +1,49 @@
+.switch_container {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 48px;
+  height: 28px;
+  background-color: #b6b6b6;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  min-width: 48px;
+  margin-left: 20px;
+
+  &.active {
+    background-color: var(--purple);
+
+    .switch_circle {
+      transform: translateX(22px);
+    }
+  }
+
+  &.inactive {
+    background-color: #b6b6b6;
+  }
+}
+
+.switch_circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: var(--contrast);
+  margin-left: 3px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+
+  .switch_icon {
+    width: 14px;
+    height: 14px;
+    color: var(--purple);
+  }
+
+  .close_icon{
+    color: #b6b6b6;
+  }
+}

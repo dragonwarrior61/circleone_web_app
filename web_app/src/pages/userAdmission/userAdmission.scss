@@ -1,0 +1,690 @@
+.full_sign_in,
+.full_create_password,
+.full_otp,
+.full_password,
+.full_create_username {
+  background-image: url("../../assets/userAdmission/Gradient.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: "Roboto";
+
+  .space_block {
+    height: 15vh;
+  }
+
+  .transparent_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: var(--icon-colour);
+    width: 570px;
+    height: 70vh;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: none;
+    padding: 10px;
+    animation: fadeIn 2s ease-in-out;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        162.81deg,
+        rgba(255, 255, 255, 0.5) 0.93%,
+        rgba(255, 255, 255, 0) 99.59%
+      );
+    box-shadow: 0px 4px 88px -16px #0000001a;
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.full_sign_in {
+  .bg_element {
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    z-index: 0;
+  }
+
+  .bg_element2 {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    z-index: -1;
+  }
+
+  .transparent_block {
+    .modal_email {
+      display: grid;
+      row-gap: 2rem;
+
+      img {
+        width: 70%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      .subtitles {
+        h3 {
+          margin-top: -2rem;
+          font-weight: bold;
+          font-size: 25px;
+          padding-bottom: 2rem;
+          color: var(--match);
+        }
+
+        h4 {
+          margin-top: -2rem;
+          font-weight: 400;
+          font-size: 1rem;
+        }
+
+        text-align: center;
+      }
+
+      .input_email {
+        position: relative;
+
+        svg {
+          position: absolute;
+          right: 9px;
+          border-radius: 20px;
+          top: 7px;
+          border: 20px;
+          font-size: 26px;
+          padding: 3px;
+          background: var(--frame);
+          cursor: pointer;
+          transition: 300ms;
+        }
+
+        svg:hover {
+          opacity: 0.7;
+          transition: 300ms;
+        }
+
+        input {
+          height: 40px;
+          width: 400px;
+          background-image: url("../../assets/userAdmission/mail.svg");
+          background-repeat: no-repeat;
+          background-position: 8px center;
+          background-size: 20px;
+          padding-left: 35px;
+          border-radius: 10px;
+          border: none;
+          margin-bottom: 16px;
+          outline-style: none;
+        }
+
+        input:focus {
+          background-color: var(--dark-white);
+          transition: 200ms;
+        }
+      }
+    }
+
+    h4 {
+      margin-top: -2rem;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  }
+
+  .button_login {
+    button {
+      width: 400px;
+      background-color: var(--purple);
+      border-radius: 10px;
+      border: none;
+      color: var(--contrast);
+      height: 40px;
+      margin-bottom: 2rem;
+      transition: 300ms;
+    }
+
+    button:hover {
+      opacity: 0.7;
+      transition: 300ms;
+    }
+  }
+
+  .copyrights {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+
+    a {
+      text-decoration: none;
+      color: var(--icon-colour);
+    }
+  }
+}
+
+.full_password {
+  .password_text {
+    text-align: center;
+
+    h3 {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 15px;
+      color: var(--match);
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  .bg_element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .bg_element2 {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    z-index: 0;
+  }
+
+  .enter_password_form {
+    margin-top: 30px;
+
+    .input_password {
+      input {
+        height: 40px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-position: 8px center;
+        background-size: 20px;
+        padding-left: 13px;
+        border-radius: 10px;
+        padding-right: 47px;
+        border: none;
+        margin-bottom: 16px;
+        outline-style: none;
+        font-size: 14px;
+      }
+
+      input:focus {
+        background-color: var(--dark-white);
+        transition: 200ms;
+      }
+
+      span {
+        position: relative;
+        right: 38px;
+        margin-right: -24px;
+        float: right;
+        top: 3px;
+        opacity: 0.4;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 500ms;
+      }
+    }
+
+    .btn_password {
+      width: 400px;
+      background-color: var(--ocean);
+      border-radius: 10px;
+      border: none;
+      color: var(--contrast);
+      height: 40px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .forgot_password_login {
+    margin-top: -20px;
+
+    h5 {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+
+  .costumer_pass {
+    margin-top: 130px;
+
+    p {
+      font-size: 0.8rem;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.full_create_password {
+  .password_text {
+    h3 {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 15px;
+      color: var(--match);
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  .bg_element {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .bg_element2 {
+    position: absolute;
+    top: 0;
+    right: 30%;
+    z-index: 0;
+  }
+
+  .create_password_form {
+    margin-top: 30px;
+
+    .input_password {
+      input {
+        height: 40px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-position: 8px center;
+        background-size: 20px;
+        padding-left: 13px;
+        border-radius: 10px;
+        padding-right: 47px;
+        border: none;
+        margin-bottom: 16px;
+        outline-style: none;
+        font-size: 14px;
+      }
+
+      input:focus {
+        background-color: var(--dark-white);
+        transition: 200ms;
+      }
+
+      span {
+        position: relative;
+        right: 38px;
+        margin-right: -24px;
+        float: right;
+        top: 3px;
+        opacity: 0.4;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 500ms;
+      }
+    }
+
+    .input_confirm_password {
+      input {
+        height: 40px;
+        width: 400px;
+        background-repeat: no-repeat;
+        background-position: 8px center;
+        background-size: 20px;
+        padding-left: 13px;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 16px;
+        outline-style: none;
+        padding-right: 47px;
+        font-size: 14px;
+      }
+
+      input:focus {
+        background-color: var(--dark-white);
+        transition: 200ms;
+      }
+
+      span {
+        position: relative;
+        right: 38px;
+        margin-right: -24px;
+        float: right;
+        top: 3px;
+        opacity: 0.4;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 500ms;
+      }
+
+      span:hover {
+        opacity: 0.6;
+        transition: 500ms;
+      }
+    }
+
+    .btn_password {
+      width: 400px;
+      background-color: var(--ocean);
+      border-radius: 10px;
+      border: none;
+      color: var(--contrast);
+      height: 40px;
+      margin-bottom: 2rem;
+    }
+
+    .btn_password:hover {
+      opacity: 0.7;
+      transition: 300ms;
+    }
+  }
+
+  .costumer_pass {
+    p {
+      font-family: "Roboto";
+      font-size: 0.8rem;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.full_otp {
+  .bg_element {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: 0;
+  }
+
+  .transparent_block {
+    padding: 50px;
+
+    .lock {
+      width: auto;
+      margin: 0 auto;
+    }
+
+    .subtitles_otp {
+      h3 {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 15px;
+        color: var(--match);
+      }
+
+      p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px;
+        color: var(--icon-colour);
+      }
+
+      .lock {
+        width: auto;
+        margin: 0 auto;
+      }
+    }
+
+    .otp_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .btn_submit {
+        width: 400px;
+        background-color: var(--ocean);
+        border-radius: 10px;
+        border: none;
+        color: var(--contrast);
+        height: 40px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      .btn_send_again {
+        width: 400px;
+        border-radius: 10px;
+        border: 1px solid var(--ocean);
+        color: var(--ocean);
+        height: 40px;
+        margin-bottom: 2rem;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0) 100%
+          ),
+          linear-gradient(
+            162.81deg,
+            rgba(255, 255, 255, 0.5) 0.93%,
+            rgba(255, 255, 255, 0) 99.59%
+          );
+      }
+    }
+
+    .costumer_pass {
+      p {
+        font-size: 0.8rem;
+        text-align: center;
+        color: var(--icon-colour);
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.full_create_username {
+  .bg_element {
+    position: absolute;
+    bottom: 0;
+    top: -3%;
+    right: 20%;
+    z-index: 0;
+  }
+
+  .transparent_block {
+    padding: 50px;
+
+    .modal_create_username {
+      display: grid;
+      row-gap: 2rem;
+
+      .username_logo {
+        width: auto;
+        margin: 0 auto;
+      }
+
+      .subtitles {
+        max-width: 70%;
+
+        h3 {
+          font-size: 24px;
+          text-align: center;
+          color: var(--match);
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+      }
+
+      .username_form {
+        .input_first_name,
+        .input_last_name {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          input {
+            height: 40px;
+            width: 400px;
+            border: 1px grey solid;
+            background-image: url("../../assets/userAdmission/user.svg");
+            background-repeat: no-repeat;
+            background-position: 16px center;
+            background-size: 20px;
+            padding-left: 40px;
+            padding-right: 20px;
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 16px;
+            font-size: 14px;
+            outline-style: none;
+          }
+
+          input:focus {
+            background-color: var(--dark-white);
+            transition: 200ms;
+          }
+        }
+
+        .input_last_name {
+          animation: fadeIn 1.5s ease-in-out;
+        }
+
+        button {
+          margin: 0 auto;
+          display: block;
+          width: 400px;
+          background-color: var(--ocean);
+          border-radius: 10px;
+          border: none;
+          color: var(--contrast);
+          height: 40px;
+          margin-bottom: 2rem;
+        }
+
+        button:hover {
+          opacity: 0.7;
+          transition: 300ms;
+        }
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+
+  h5 {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .costumer_pass {
+    p {
+      font-family: "Roboto";
+      font-size: 0.8rem;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//Welcome Page
+
+.welcome_page_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.815);
+
+  .bg_element {
+    position: absolute;
+    bottom: 0;
+    top: -3%;
+    right: 20%;
+    z-index: -1;
+  }
+
+  .logo_welcome {
+    margin-bottom: 14px;
+
+    img {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  .welcome_subtitles {
+    text-align: center;
+
+    h5 {
+      font-weight: bold;
+      font-size: 35px;
+      margin-bottom: 38px;
+    }
+
+    .text_welcome {
+      color: var(--icon-colour);
+      font-size: 18px;
+    }
+
+    .hashtag_welcome {
+      font-weight: bold;
+      color: var(--icon-colour);
+      margin-top: -10px;
+    }
+  }
+
+  .welcome_button {
+    margin-top: 38px;
+
+    button {
+      width: 400px;
+      height: 50px;
+      border: solid 1px var(--purple);
+      border-radius: 12px;
+      background-color: var(--purple);
+      color: var(--contrast);
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+.back_button {
+  top: 40px;
+  left: 40px;
+  background: #ffffff57;
+  padding: 5px;
+  border-radius: 100px;
+  float: left;
+  position: absolute;
+}

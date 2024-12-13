@@ -1,0 +1,50 @@
+.drag_container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 20;
+  font-family: Roboto;
+
+  .file_block {
+    background-color: rgba(255, 255, 255, 0.411);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: solid 2px var(--contrast);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 266px;
+    width: 405px;
+
+    .file_img {
+      width: 228px;
+      height: 228px;
+      position: absolute;
+      bottom: 150px;
+    }
+
+    .subtitles_files {
+      margin-top: 110px;
+      color: var(--purple);
+
+      .upload_to {
+        font-size: 32px;
+      }
+
+      .text_files {
+        font-size: 16px;
+        font-weight: 550;
+      }
+    }
+  }
+}

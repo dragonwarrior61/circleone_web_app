@@ -1,0 +1,52 @@
+.to_do_bar {
+  width: 100%;
+  height: 680px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto";
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.line {
+  width: 250px;
+  height: 1px;
+  background-color: var(--light-white);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.to_do_list {
+  width: 250px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.to_do_list_subtitles {
+  display: flex;
+  align-items: center;
+
+  .add_icon {
+    margin-right: 10px;
+    fill: #626262;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .dropdown_icon {
+    margin-left: auto;
+    cursor: pointer;
+  }
+}
+
+.rotate-icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}

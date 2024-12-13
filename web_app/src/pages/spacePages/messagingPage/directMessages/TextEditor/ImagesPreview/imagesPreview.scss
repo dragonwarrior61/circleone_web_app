@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.imagesPreview {
+	width: 100%;
+	background-color: #F5F5F5;
+	position: absolute;
+	top: -295px;
+	border-radius: 8px;
+
+	.imagesPreviewContainer {
+		display: flex;
+		gap: 12px;
+		padding: 12px;
+		overflow-x: auto;
+	}
+}

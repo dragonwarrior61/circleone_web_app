@@ -1,0 +1,189 @@
+.full_select_avatar {
+  background-image: url("../../../assets/userAdmission/Gradient.png");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: "Roboto";
+
+  .bg_element {
+    position: absolute;
+    bottom: 100px;
+    right: 20%;
+    z-index: 0;
+  }
+
+  .space_block {
+    height: 5vh;
+  }
+
+  .transparent_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: var(--icon-colour);
+    width: 870px;
+    height: 90vh;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: none;
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      linear-gradient(
+        162.81deg,
+        rgba(255, 255, 255, 0.5) 0.93%,
+        rgba(255, 255, 255, 0) 99.59%
+      );
+    box-shadow: 0px 4px 88px -16px #0000001a;
+    overflow: hidden;
+
+    .subtitles {
+      margin-top: -50px;
+
+      h3 {
+        font-size: 34px;
+        text-align: center;
+        color: var(--match);
+        margin-top: 80px;
+      }
+    }
+
+    .avatar_container {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      .avatar_show {
+        margin-left: 20px;
+        position: relative;
+        height: 400px;
+        width: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          background-clip: content-box;
+          cursor: pointer;
+          border-radius: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .options {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 20px;
+        width: fit-content;
+
+        .a_options {
+          margin-top: -25px;
+
+          .avatar_options {
+            margin: auto;
+          }
+        }
+
+        .avatar_objects {
+          width: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+
+          h5 {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+          }
+
+          .objects {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+
+            img {
+              background-color: #ffff;
+              margin: 8px 10px;
+              width: 70px;
+              height: 70px;
+              cursor: pointer;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .bg_and_btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 2rem;
+
+      .bg {
+        h5 {
+          font-size: 18px;
+        }
+      }
+
+      .btn_avatar {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-left: 225px;
+
+        .btn_photo {
+          width: 300px;
+          border-radius: 10px;
+          border: 1px solid var(--ocean);
+          color: var(--icon-colour);
+          height: 40px;
+          margin-bottom: 1rem;
+          background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(255, 255, 255, 0) 100%
+            ),
+            linear-gradient(
+              162.81deg,
+              rgba(255, 255, 255, 0.5) 0.93%,
+              rgba(255, 255, 255, 0) 99.59%
+            );
+
+          &:hover {
+            background-color: var(--ocean);
+            color: white;
+          }
+        }
+
+        .btn_save {
+          width: 300px;
+          background-color: var(--ocean);
+          border-radius: 10px;
+          border: none;
+          color: var(--contrast);
+          height: 40px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+  }
+}

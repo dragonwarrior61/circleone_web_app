@@ -1,0 +1,98 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/login",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/setusername",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/otpRegister",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/setName",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/createpassword",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/password",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/selectAvatar",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/site/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/main",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/directmessages",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/welcome",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/space",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/support",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/settingsBar",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/userprofile",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/addSpace",
+      "serve": "/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif}", "/css/*", "/js/*"]
+  }
+}

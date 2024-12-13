@@ -1,0 +1,19 @@
+.emoji_reactor {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--purple);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.emoji_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5px;
+}
+
+.emoji_item img {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+}

@@ -1,0 +1,108 @@
+.profile_view_container {
+  display: flex;
+  flex-direction: row;
+  width: 314px;
+  height: 44px;
+  position: absolute;
+  right: 4px;
+  top: 5px;
+  background-color: #e0d0e8;
+  border: solid 2px #d1b5de;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+  .avatar_profile {
+    margin-left: 5px;
+    margin-top: 1px;
+
+    img {
+      height: 40px;
+      width: 40px;
+      padding: 2px;
+    }
+  }
+
+  .profile_info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+    .username_profile_view {
+      h5 {
+        font-size: 14px;
+        color: #202020;
+      }
+
+      p {
+        color: #6c757d;
+        font-weight: 500;
+        font-size: 11px;
+        margin-top: -10px;
+      }
+
+      .experience_profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -22px;
+
+        .experience_bar_container {
+          width: 170px;
+          height: 6px;
+          background-color: var(--contrast);
+          border-radius: 10px;
+          overflow: hidden;
+        }
+
+        .experience_bar_progress {
+          height: 100%;
+          background: linear-gradient(90deg, #ffc10e 0%, #ff006c 50%);
+        }
+
+        .level_indicator {
+          margin-left: 4px;
+          margin-bottom: 2px;
+          font-size: 10px;
+          color: #202020;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d1b5de;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 14px;
+    margin-top: 5px;
+    cursor: pointer;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.notifications_counter {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: var(--red);
+  right: -5px;
+  bottom: 0px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  color: var(--contrast);
+}

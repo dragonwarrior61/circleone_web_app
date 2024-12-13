@@ -1,0 +1,246 @@
+.tick_filter{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: var(--dark-grey);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.avatars_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-rows: repeat(5, 1fr);
+  height: 270px;
+  gap: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 500px;
+  max-width: 100%;
+  padding-right: 4px;
+  margin: 20px 0px 40px 0px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--gray-light-d);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--scroll-gray);
+    cursor: pointer;
+  }
+
+  .selected_avatar{
+    box-shadow: 0px 2px 2px 0px #00000014;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 78px;
+    height: 78px;
+    margin-top: 1px;
+    margin-left: 1px;
+    transition: ease-in-out 100ms;
+    overflow: hidden;
+  }
+
+  .avatar_item {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.object_item {
+  position: relative;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin: 0px 10px 10px 0px;
+  cursor: pointer;
+  
+  img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.object_item img:not(.selected-avatar-image) {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--nearly-white);
+  border-radius: 10px;
+}
+
+
+.background_gradients_container {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 5px;
+  margin: 20px 0px 40px 0px;
+  justify-items: center;
+  width: 500px;
+  max-width: 100%;
+
+  .background_gradient_item {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #B6B6B6;
+  }
+}
+
+.textarea_container {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: -5px;
+
+  .emoji_btn_me {
+    background-color: var(--dark-white);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 8px;
+    left: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    svg{
+      fill: #626262;
+    }
+  }
+
+  .about_me_textarea {
+    width: 100%;
+    height: 190px;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    border: 1px solid var(--separator);
+    border-radius: 8px;
+  }
+  
+  .char_counter {
+    position: absolute;
+    bottom: 14.91px;
+    right: 20px;
+    color: var(--icon-colour);
+  }
+}
+
+.emoji_picker_container_me {
+  position: absolute;
+  top: -350px;
+  z-index: 800;
+}
+
+.selected_display_section {
+  @media (min-width: 1501px) {
+    position: fixed;
+    margin-top: -20px;
+    margin-left: 650px;
+  }
+
+  @media (max-width: 1500px) {
+    position: relative;
+    margin: 30px;
+  }
+
+  .preview_container {
+    @media (max-width: 1500px) {
+      width: 100%;
+      max-width: 550px;
+    }
+    margin-top: 100px;
+    width: 420px;
+    background-color: var(--dark-white);
+    border-radius: 8px;
+    box-shadow: 0px 7px 12px 1px rgba(0, 0, 0, 0.1);
+
+    .profile_block_preview {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 30px 30px 30px;
+
+      .about_me_title {
+        font-size: 10px;
+        font-weight: 500;
+        color: var(--icon-colour);
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.banner_circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  background: #B6B6B6;
+}
+
+.selected_avatar_display {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 80px;
+  overflow: hidden;
+  margin: 20px 0px 0px 20px;
+
+  .displayed_avatar_image,
+  .displayed_object_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.verification_icon {
+  z-index: 10;
+  color: var(--contrast);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px !important;
+}
+
+.avatar_item,
+.object_item,
+.background_gradient_item {
+  position: relative;
+}
+
+.object_item.selected_object {
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 0px #00000014;
+  border: 2px solid rgb(255, 255, 255);
+}

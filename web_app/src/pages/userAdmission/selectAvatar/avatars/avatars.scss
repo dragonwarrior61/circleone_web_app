@@ -1,0 +1,42 @@
+.avatar_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 250px;
+  overflow-x: scroll;
+
+  .avatar_container {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar_img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .selected {
+    border: 3px solid rgb(143, 19, 214);
+    animation: myAnim 0.8s ease 0s 1 normal forwards;
+  }
+
+  @keyframes myAnim {
+    0% {
+      transform: scale(0.5);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}

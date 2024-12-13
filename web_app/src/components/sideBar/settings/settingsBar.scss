@@ -1,0 +1,110 @@
+.setting_bar_container {
+  width: 100%;
+  height: 100%;
+  color: var(--icon-colour);
+  padding: 17px;
+  position: relative;
+  margin-top: -17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .settings_title {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 0px 5px;
+  }
+
+  .settings {
+    h6 {
+      font-size: 14px;
+      margin-left: 6px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      margin-bottom: 32px;
+
+      li {
+        cursor: pointer;
+        padding: 6px;
+        transition: 300ms;
+        border-radius: 5px;
+      }
+
+      li:hover {
+        background: var(--light-white);
+      }
+
+      li.active {
+        color: #333333;
+      }
+    }
+  }
+
+  .buttons_settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    .log_out_button {
+      width: 240px;
+      height: 38px;
+      color: var(--icon-colour);
+      padding: 10px 14px;
+      border: 1px solid var(--icon-colour);
+      border-radius: 6px;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .exit_button {
+      width: 240px;
+      height: 38px;
+      color: var(--contrast);
+      border: 1px solid #333333;
+      border-radius: 6px;
+      background-color: #333333;
+    }
+  }
+}
+
+.safeguarding_div {
+  width: fit-content;
+  padding: 5px 20px 5px 15px;
+  max-width: 100%;
+  background-color: var(--light-purple);
+  border-top-right-radius: 10px;
+  border-left: none;
+  border: 1px solid var(--contrast);
+  position: relative;
+  bottom: -17px;
+  left: -43px;
+}
+
+.safeguarding_account {
+  display: flex;
+  gap: 10px;
+
+  p {
+    color: var(--match);
+    margin-top: 16px;
+    margin-left: 8px;
+  }
+
+  span{
+    margin-left: 5px;
+    color: var(--purple);
+    font-weight: 600;
+  }
+}
